@@ -22,11 +22,3 @@ module "gcp" {
   }
 }
  
-module "loadbalancer" {
-  source = "loadbalancer"      
-  addresses = [
-    module.aws.network_address,                                      
-    module.azure.network_address,                                    
-    module.gcp.network_address,                                      
-  ]
-}

@@ -12,4 +12,3 @@ provider "google" {
   region  = "us-east1"
 }
  
-provider "docker" {}  
